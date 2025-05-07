@@ -66,6 +66,7 @@ button {
   cursor: pointer;
   transition: 1s ease-out;
   border: none;
+  background-color:greenyellow;
 }
 
 #result {

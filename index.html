@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="TemperatureCacualtor.css" />
+    <script src="TemperatureCalculator.js"></script>
+  </head>
+
+  <body>
+    <div class="Container">
+      <h2>🌡️ Temperature Converter Project</h2>
+      <!-- for="temperature" ka matlab hai ke ke yeh label us input box ke sath link hai jiska id="temperature" hai.Yani Jab banda label pe click karta hai, to woh input box automatically select ho jata hai. -->
+      <div class="input-group">
+        <label for="temperature">Enter Temperature:</label>
+        <input type="number" placeholder="e.g 32.9" name="" id="temperature" />
+      </div>
+      <div class="input-group">
+        <label for="Unit">Select Unit:</label>
+        <select id="Unit">
+          <!-- value  hum system ko backend apr samjanye k lye use kary tay ha javaScript k mada say -->
+          <option value="celsius">Celsius (°C)</option>
+          <option value="farenheit">Farenheit (°F)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+
+        <button onclick="ConvertTemp()">Convert</button>
+        <div id="result" style="display: none">
+          display: none; ka matlab hai."Is element ko chupao-screen par bilkul
+          bhi na dikhaye."
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
